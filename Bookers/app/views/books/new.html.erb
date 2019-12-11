@@ -4,15 +4,10 @@
 	<title>WebCampBookendNew</title>
 </head>
 <body>
-	<h1>Books</h1>
-	<h2>New book</h2>
-		<%= form_for(@book) do |f| %>
-		<h4>Title</h4>
-			<%= f.text_field :title %>
-		<h4>Body</h4>
-			<%= f.text_area :body %>
+	<h1>ようこそBookersへ！</h1>
+	<h4><p>Bookersでは、さまざまな書籍に関するあなたの意見や、<br>
+			印象を共有し交換することができます</h4>
 
-		<%= f.submit 'Create Book' %>
-
+	<%= link_to "start", books_path %>
 </body>
 </html>
